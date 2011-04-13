@@ -10,7 +10,7 @@ $irregularWords = array(
 
 $irregularWords = array(
     'entry' => 'blog',
-    'archlink' => 'archmenu',
     'admin' => 'admin',
-    'category' => 'categories'
+    'category' => 'categories',
+    'tag' => 'tags'
 );
