@@ -39,26 +39,26 @@ function make_feed($rss_or_atom, $lim) {
 	//accumulate content;
 	if ($rss_or_atom == "atom") $content = "<?xml version=\"1.0\" encoding=\"utf-8\"?>
 <feed xmlns=\"http://www.w3.org/2005/Atom\">
-<link href=\"http://iam.solostyle.net/atom.xml\" rel=\"self\" />
+<link href=\"http://athousandpetals.com/atom.xml\" rel=\"self\" />
 
- <title>iam.solostyle.net</title>
- <subtitle>Me.</subtitle>
- <link href=\"http://iam.solostyle.net/\"/>
+ <title>AThousandPetals.com</title>
+ <subtitle>Yoga Training, Meditation Classes, and Massage Therapy</subtitle>
+ <link href=\"http://athousandpetals.com/\"/>
  <updated>$now_d</updated>
  <author>
-   <name>solostyle</name>
-   <email>solo@solostyle.net</email>
+   <name>Admin</name>
+   <email>admin@athousandpetals.com</email>
  </author>
- <id>tag:iam.solostyle.net,2006-04-16:/20060416063829735</id>";
+ <id>tag:athousandpetals.com,2011-04-14:/20110414153523456</id>";
  	else $content = "<?xml version=\"1.0\" encoding=\"utf-8\"?>
  <rss version=\"2.0\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\">
   <channel>
-    <title>iam.solostyle.net</title>
-    <link>http://iam.solostyle.net/</link>
-    <description>Me.</description>
+    <title>athousandpetals.com</title>
+    <link>http://athousandpetals.com/</link>
+    <description>Yoga Training, Meditation Classes, and Massage Therapy</description>
     <language>en-us</language>";
 
-	$getentries = "SELECT * FROM `blog` ORDER BY `time` DESC LIMIT $lim";
+	$getentries = "SELECT * FROM `articles` ORDER BY `time` DESC LIMIT $lim";
 	$entrieslist = mysql_query($getentries);
 	//$num_entries = mysql_num_rows($entrieslist);
 	// now, for each entry, publish xml
@@ -120,9 +120,9 @@ function dcdateformat($entrydate) {
 function my_mktime() {
     // for chicago
 		//$time = mktime(date("H")+2, date("i")-11); // for some reason the time is 11 min fast too!
-		// for mysore
+		// for chennai
 		$time = mktime(date("H")+14, date("i")-41);
-		print ('mysore time is ' . $time);
+		print ('chennai time is ' . $time);
     return $time;
 }
 

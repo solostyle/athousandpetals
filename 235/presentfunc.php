@@ -31,7 +31,7 @@ function make_entry($row) {
 			     <h2>' . $title . '</h2>
 			     ' . $entry . '
 			     <!-- <p>
-				     <em><a name=\"bot\" href=\"http://iam.solostyle.net/comment.php\">comment</a></em>
+				     <em><a name=\"bot\" href=\"http://athousandpetals.com/comment.php\">comment</a></em>
 			     </p> -->
                         </div><!-- /end .main -->
 
@@ -419,7 +419,7 @@ function list_categories() {
 function rtrv_categories() {
     $categories = array();
     $query = "
-        SELECT `category_nm`
+        SELECT `name`
         FROM `categories`";
     $result = mysql_query($query);
     while($c = mysql_fetch_array($result)) {
