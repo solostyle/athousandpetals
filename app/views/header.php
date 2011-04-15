@@ -90,7 +90,7 @@ if(isset($_POST['login_submit'])) {
         echo make_list_item(make_link('About', make_url('about')));
         foreach ($cats as $c) {
             $link = str_replace(" ", "_", $c);
-            echo make_list_item(make_link($c, make_url($link)));
+            echo make_list_item(make_link($c, make_url($link.'/')));
         }
         mysql_close();
             ?>
