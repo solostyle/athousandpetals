@@ -1,33 +1,7 @@
-this.Iam.Admin = this.Iam.Admin || function() {
+this.Atp.Admin = this.Atp.Admin || function() {
 
     // Elements
-    var addEntryWPElem = function() {return Ydom.get('blogAddForm');},
-    blogEntriesElem = function() {return Ydom.get('blogEntries');},
-    formDivElem = function() {return Ydom.get('addForm');},
-    formToggleDivElem = function() {return Ydom.get('addAnEntry');},
-    formTitleElem = function() {return Ydom.get('addFormTitle');},
-    formEntryElem = function() {return Ydom.get('addFormEntry');},
-    formTimeElem = function() {return Ydom.get('addFormTime');},
-
-    formYearElem = function() {return Ydom.get('year');},
-    formMonthElem = function() {return Ydom.get('month');},
-    formDateElem = function() {return Ydom.get('date');},
-    formHourElem = function() {return Ydom.get('hour');},
-    formMinuteElem = function() {return Ydom.get('minute');},
-    
-    formEditElem = function(pre, id) {return Ydom.get(pre+'_'+id);},
-    updTitle = function() {return formEditElem("entryTitle", id).innerHTML;},
-    updEntry = function() {return formEditElem("entryEntry", id).innerHTML;},
-    
-    inpEntry = function() {return formEntryElem().value;}, // TODO: escape quotes!
-    inpTitle = function() {return formTitleElem().value;}, // TODO: escape quotes!
-    inpCategory = function() {return chooseCategory();},
-    inpTime = function() {return formTimeElem().value;},
-    inpYear = function() {return formYearElem().value;},
-    inpMonth = function() {return formMonthElem().value;},
-    inpDate = function() {return formDateElem().value;},
-    inpHour = function() {return formHourElem().value;},
-    inpMinute = function() {return formMinuteElem().value;};
+    var contentWPElem = function() {return Ydom.get('contentWP');};
     
     // Success and failure functions for different requests
     var handleFailure = function(o){
@@ -80,7 +54,7 @@ this.Iam.Admin = this.Iam.Admin || function() {
     };
     
     var updateEntryRequest = function(id) {
-        callback.data = 'id='+id+'&title='+updTitle()+'&entry='+Iam.ConvertBrAndP(updEntry());
+        callback.data = 'id='+id+'&title='+updTitle()+'&entry='+Atp.ConvertBrAndP(updEntry());
         var updateRequest = AjaxR('../blog/update', callback);
     };
   
@@ -174,7 +148,7 @@ this.Iam.Admin = this.Iam.Admin || function() {
         
         // change behavior of the entryEntry div element
         var entryEl = formEditElem("entryEntry", id);
-        var clean = Iam.ConvertBrAndP(entryEl.innerHTML);
+        var clean = Atp.ConvertBrAndP(entryEl.innerHTML);
         entryEl.innerHTML = '<textarea>'+clean+'</textarea>';
         //el.onclick = null; //not needed b/c it didn't have an event
     };
@@ -183,7 +157,7 @@ this.Iam.Admin = this.Iam.Admin || function() {
         // change behavior of the entryEntry div element
         var entryEl = formEditElem("entryEntry", id);
         var childEl = entryEl.childNodes[0];
-        var htmlized = Iam.ConvertNewLines(childEl.value);
+        var htmlized = Atp.ConvertNewLines(childEl.value);
         entryEl.innerHTML = htmlized;
         
         // change behavior of the entryEditButton for title

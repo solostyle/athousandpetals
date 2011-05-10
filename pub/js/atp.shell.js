@@ -1,4 +1,4 @@
-this.Iam.Shell = this.Iam.Shell || function() {
+this.Atp.Shell = this.Atp.Shell || function() {
 
     var handleDomReady = function(obj) {
         //onDOMReady uses the Custom Event signature, with the object
@@ -7,13 +7,13 @@ this.Iam.Shell = this.Iam.Shell || function() {
         //"DOMReady", [], obj
 
         // load blog entries web part
-        Iam.Blog.Load(); // actually loads blog entries and then may listen for clicks
+        Atp.Blog.Load(); // actually loads blog entries and then may listen for clicks
 
         // load archive navigation web part
-        //Iam.Archmenu.Load();
+        //Atp.Archmenu.Load();
         
         // load admin web part
-        Iam.Admin.Load(); // doesn't load anything (header.php does it); just listens for clicks
+        Atp.Admin.Load(); // doesn't load anything (header.php does it); just listens for clicks
     };
 
     return {

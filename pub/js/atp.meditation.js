@@ -1,10 +1,10 @@
-this.Iam.Ids = this.Iam.Ids || function() {
+this.Atp.Meditation = this.Atp.Meditation || function() {
 
     // Globals, bah!
-    var root = "http://iam.solostyle.net", ds = "/";
+    var root = "http://athousandpetals.com", ds = "/";
 
     // Elements
-    var blogWPElem = function() {return Ydom.get('blogEntries');};
+    var contentWPElem = function() {return Ydom.get('contentWP');};
 
     // Success and failure functions for different requests
     var handleFailure = function(o){
@@ -25,16 +25,25 @@ this.Iam.Ids = this.Iam.Ids || function() {
         failure: handleFailure
     };
 
-    var idRequest = function(id){
-        var requestStr = root+ds+'blog/id/'+id;
+    var catRequest = function(pageStr){
+        cat = cat.replace(/[_]/gi, " ");
+        var requestStr = root+ds+'categories/index/Meditation_Classes'+pageStr;
         var request = AjaxR(requestStr, callback);
     };
 
     return {
 
-        Load: function(id){
+        Load: function(pageArray){
             // initial load
-            idRequest(id);
+            if (pageArray) {
+                var pageStr='', i;
+                for(i=pageArray.length;i;i--){
+                    pageStr+='/'+pageArray[i];
+                }
+            } else {
+                pageStr = 'index';
+            }
+            catRequest(pageStr);
         }
     };
 

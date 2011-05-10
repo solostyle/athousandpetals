@@ -1,10 +1,10 @@
-this.Iam.Categories = this.Iam.Categories || function() {
+this.Atp.Yoga = this.Atp.Yoga || function() {
 
     // Globals, bah!
-    var root = "http://iam.solostyle.net", ds = "/";
+    var root = "http://athousandpetals.com", ds = "/";
 
     // Elements
-    var blogWPElem = function() {return Ydom.get('blogEntries');};
+    var contentWPElem = function() {return Ydom.get('contentWP');};
 
     // Success and failure functions for different requests
     var handleFailure = function(o){
@@ -25,17 +25,25 @@ this.Iam.Categories = this.Iam.Categories || function() {
         failure: handleFailure
     };
 
-    var catRequest = function(cat){
+    var catRequest = function(pageStr){
         cat = cat.replace(/[_]/gi, " ");
-        var requestStr = root+ds+'blog/category/'+cat;
+        var requestStr = root+ds+'categories/index/Therapeutic_Yoga'+pageStr;
         var request = AjaxR(requestStr, callback);
     };
 
     return {
 
-        Load: function(cat){
+        Load: function(pageArray){
             // initial load
-            catRequest(cat);
+            if (pageArray) {
+                var pageStr='', i;
+                for(i=pageArray.length;i;i--){
+                    pageStr+='/'+pageArray[i];
+                }
+            } else {
+                pageStr = 'index';
+            }
+            catRequest(pageStr);
         }
     };
 
