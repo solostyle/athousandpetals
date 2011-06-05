@@ -4,5 +4,5 @@
 </div><!-- end #right -->
 
 <script type="text/javascript">
-this.Iam.Shell.LoadWebParts();
+this.Atp.Shell.LoadWebParts();
 </script>

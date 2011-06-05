@@ -98,7 +98,7 @@ function DetermineRequest() {
         $controller = $urlArray[0];
         array_shift($urlArray);
 
-        if (isset($urlArray[0])) {
+        if (isset($urlArray[0]) && !empty($urlArray[0])) {
             $action = $urlArray[0];
             array_shift($urlArray);
             $queryString = $urlArray;

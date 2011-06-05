@@ -26,7 +26,6 @@ this.Atp.Meditation = this.Atp.Meditation || function() {
     };
 
     var catRequest = function(pageStr){
-        cat = cat.replace(/[_]/gi, " ");
         var requestStr = root+ds+'Meditation_Classes'+pageStr;
         var request = AjaxR(requestStr, callback);
     };

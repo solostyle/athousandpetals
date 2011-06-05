@@ -26,7 +26,6 @@ this.Atp.Massage = this.Atp.Massage || function() {
     };
 
     var catRequest = function(pageStr){
-        cat = cat.replace(/[_]/gi, " ");
         var requestStr = root+ds+'Massage_Therapy'+pageStr;
         var request = AjaxR(requestStr, callback);
     };

@@ -26,7 +26,6 @@ this.Atp.Yoga = this.Atp.Yoga || function() {
     };
 
     var catRequest = function(pageStr){
-        cat = cat.replace(/[_]/gi, " ");
         var requestStr = root+ds+'Therapeutic_Yoga'+pageStr;
         var request = AjaxR(requestStr, callback);
     };
