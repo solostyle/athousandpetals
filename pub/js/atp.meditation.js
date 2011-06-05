@@ -27,7 +27,7 @@ this.Atp.Meditation = this.Atp.Meditation || function() {
 
     var catRequest = function(pageStr){
         cat = cat.replace(/[_]/gi, " ");
-        var requestStr = root+ds+'categories/index/Meditation_Classes'+pageStr;
+        var requestStr = root+ds+'Meditation_Classes'+pageStr;
         var request = AjaxR(requestStr, callback);
     };
 
@@ -38,10 +38,10 @@ this.Atp.Meditation = this.Atp.Meditation || function() {
             if (pageArray) {
                 var pageStr='', i;
                 for(i=pageArray.length;i;i--){
-                    pageStr+='/'+pageArray[i];
+                    pageStr+=ds+pageArray[i];
                 }
             } else {
-                pageStr = 'index';
+                pageStr = ds+'index';
             }
             catRequest(pageStr);
         }

@@ -27,7 +27,7 @@ this.Atp.Massage = this.Atp.Massage || function() {
 
     var catRequest = function(pageStr){
         cat = cat.replace(/[_]/gi, " ");
-        var requestStr = root+ds+'categories/index/Massage_Therapy'+pageStr;
+        var requestStr = root+ds+'Massage_Therapy'+pageStr;
         var request = AjaxR(requestStr, callback);
     };
 
@@ -38,10 +38,10 @@ this.Atp.Massage = this.Atp.Massage || function() {
             if (pageArray) {
                 var pageStr='', i;
                 for(i=pageArray.length;i;i--){
-                    pageStr+='/'+pageArray[i];
+                    pageStr+=ds+pageArray[i];
                 }
             } else {
-                pageStr = 'index';
+                pageStr = ds+'index';
             }
             catRequest(pageStr);
         }

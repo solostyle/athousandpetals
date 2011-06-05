@@ -73,7 +73,7 @@ function DetermineRequest() {
     // declare variables
     global $url;
     global $default;
-    $error_page = ROOT . DS . 'error404.php';
+    $error_page = ROOT . DS . 'error404.php'; // TODO: test
     
     $queryString = array();
 
@@ -105,12 +105,7 @@ function DetermineRequest() {
         } else {
             $action = 'index'; // Default Action
         }
-//             case ($controller == "admin"):
-//             case ($controller == "members"):
-//             case ($controller == "news"):
-//             case ($controller == "contact"):
-//             case ($controller == "articles"):
-//                 //handle_articles($urlArray);
+
     }
 
     $controllerName = ucfirst($controller) . 'Controller';
