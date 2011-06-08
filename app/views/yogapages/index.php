@@ -5,5 +5,4 @@
 
 <script type="text/javascript">
 this.Atp.Admin.Load();
-this.Atp.Yoga.Load("<?php echo $pageArray;?>");
 </script>

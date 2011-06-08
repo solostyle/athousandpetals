@@ -5,4 +5,5 @@
 
 <script type="text/javascript">
 this.Atp.Admin.Load();
+this.Atp.Massage.Load("<?php echo $pageArray;?>");
 </script>
