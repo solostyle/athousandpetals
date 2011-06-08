@@ -18,15 +18,22 @@ option {border:0;padding:0 3px;}
 }
 #content .entry h3 {text-align:left;}
 #left h3 {margin:0;}
-#blogAddForm h2 {font-size:.8em; color:#c52}
-#blogAddForm h2:hover {color:#fc0}
+
 #topnav {padding:4px 0;background-color:#ddd}
 #topnav li {display:inline;padding:4px 1%;background-color:#ddd;border: 1px solid #eee}
 #topnav li:hover {background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(200, 0, 0, .9))}
+.currentDivision {font-weight:bold}
+#topnav.index {text-align:center;background:transparent}
+#topnav.index li {padding:3em 1em;border:0;background-color:#ff0000}
+#topnav.index li:hover {background-color:transparent}
+#topnav.index li a {padding:1em}
+#topnav.index li a:hover {}
 
 #midnav {padding:4px 0;background-color:#ddd}
 #midnav li {display:inline;padding:4px 2%;background-color:#ddd;border: 1px solid #eee}
 #midnav li:hover {background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(200, 0, 0, .9))}
+.currentPage {font-weight:bold;background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(200, 0, 0, .9))}
+#midnav.index {display:none}
 
 .info {font-size:.8em}
 .entry p {line-height:1.3em}

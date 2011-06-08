@@ -3,9 +3,9 @@
 class MassagepagesController extends Controller {
 
     function about() {
-        //$this->set('pageArray', $queryArray);
     }
-    function midnav() {
+    function midnav($queryString) {
         $this->doNotRenderHeader = true;
+        $this->set('currentPage', $queryString);
     }
 }

@@ -25,6 +25,12 @@ be careful when changing or recalculating these
     left: 0;
 }
 
+#topnav.index {
+    margin: 2.5em auto;
+    width: 70.85%;      /* 700px / 988px = 0.7085 */
+    position: relative;
+}
+
 #midnav {
     margin: 1em 0;
     width: 100%;

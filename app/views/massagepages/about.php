@@ -4,6 +4,5 @@
 </div><!-- end #right -->
 
 <script type="text/javascript">
-this.Atp.Admin.Load();
-this.Atp.Massage.LoadMidNav('about');
+this.Atp.Admin.LoadMidNav('about');
 </script>
