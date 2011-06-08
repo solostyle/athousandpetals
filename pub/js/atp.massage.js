@@ -4,7 +4,8 @@ this.Atp.Massage = this.Atp.Massage || function() {
     var root = "http://athousandpetals.com", ds = "/";
 
     // Elements
-    var contentWPElem = function() {return Ydom.get('contentWP');};
+    var contentWPElem = function() {return Ydom.get('contentWP');},
+    midnavElem = function() {return Ydom.get('midnav');};
 
     // Success and failure functions for different requests
     var handleFailure = function(o){
@@ -19,6 +20,18 @@ this.Atp.Massage = this.Atp.Massage || function() {
         }
     };
 
+    var handleMidnavFailure = function(o){
+        if(o.responseText !== undefined){
+            midnavElem().innerHTML = "request failure: " + o.responseText + midnavElem().innerHTML;
+        }
+    };
+
+    var handleMidnavSuccess = function(o) {
+        if(o.responseText !== undefined){
+            midnavElem().innerHTML = o.responseText;
+        }
+    };
+    
     var callback ={
         method:"GET",
         success: handleSuccess,
@@ -30,6 +43,19 @@ this.Atp.Massage = this.Atp.Massage || function() {
         var request = AjaxR(requestStr, callback);
     };
 
+    var midnavCallback ={
+        method:"GET",
+        success: handleMidnavSuccess,
+        failure: handleMidnavFailure
+    };
+    
+    var midnavRequest = function(currentPage){
+        var requestStr = root+ds+'Massage_Therapy/midnav';
+        var request = AjaxR(requestStr, midnavCallback);
+    };    
+    
+    
+    
     return {
 
         Load: function(pageArray){
@@ -43,6 +69,9 @@ this.Atp.Massage = this.Atp.Massage || function() {
                 pageStr = ds+'index';
             }
             catRequest(pageStr);
+        },
+        LoadMidNav: function(currentPage){
+            midnavRequest(currentPage);
         }
     };
 

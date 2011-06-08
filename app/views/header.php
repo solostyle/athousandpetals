@@ -99,18 +99,7 @@ if(isset($_POST['login_submit'])) {
             ?>
     </ul>
 
-    <!-- show mid-level navigation -->
-    <ul id="midnav"><?php 
-        select_db();
-        $cats = rtrv_categories();
-        //echo make_list_item(make_link('About', make_url('about'))); // removed for now june 8, 2011
-        foreach ($cats as $c) {
-            $link = str_replace(" ", "_", $c);
-            echo make_list_item(make_link($c, make_url($link.'/')));
-        }
-        mysql_close();
-            ?>
-    </ul>
+    <ul id="midnav"><!-- each view page inserts html here --></ul>
 
     <div id="loginToggle" onmouseup="Ydom.get('login').style.display = (Ydom.get('login').style.display=='none')? 'block' : 'none';"><?php if (isset($_SESSION['logged_in'])):?>Funcs<?php else:?>Login<?php endif;?></div>
     <div id="login" style="display:none">
@@ -152,9 +141,6 @@ if(isset($_POST['login_submit'])) {
 
     <div id="content"> 
         <div id="left">
-            <?php
-               //include (ROOT.DS. 'app' .DS. 'views' .DS. 'archmenu' .DS. 'index.php');
-            ?>
 
         </div><!-- end #left -->
 
