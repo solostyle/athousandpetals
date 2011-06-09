@@ -4,6 +4,6 @@
 </div><!-- end #right -->
 
 <script type="text/javascript">
-this.Atp.Admin.LoadMidNav('blog');
+
 //this.Atp.Meditation.Load("$pageArray");
 </script>
