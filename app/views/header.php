@@ -88,18 +88,54 @@ if(isset($_POST['login_submit'])) {
 
     <!-- show top-level navigation -->
     <ul id="topnav"><?php 
+        // find the current category for highlighting later
+        $uriArray = explode('/', $_SERVER['REQUEST_URI']);
+        $currentCat = (count($uriArray)>=2)?$uriArray[1]:'';
+        $currentPage = (count($uriArray)>=3)?$uriArray[2]:'';
+
         select_db();
         $cats = rtrv_categories();
-        //echo make_list_item(make_link('About', make_url('about'))); // removed for now june 8, 2011
+
         foreach ($cats as $c) {
             $link = str_replace(" ", "_", $c);
-            echo make_list_item(make_link($c, make_url($link.'/')));
+            // highlight the category
+            if ($link == $currentCat) {
+                echo '<li class="currentDivision">' . make_link($c, make_url($link.'/')). '</li>';
+            } else {
+                echo make_list_item(make_link($c, make_url($link.'/')));
+            }
         }
         mysql_close();
             ?>
     </ul>
 
-    <ul id="midnav" class="hidden"><!-- each view page inserts html here --></ul>
+    <ul id="midnav" class="hidden">
+        <?php 
+        switch ($currentCat) {
+            case "Massage_Therapy":
+                $pages = array('about','benefits','therapies','reviews','policies','forms','blog','contact');
+                break;
+            case "Therapeutic_Yoga":
+                $pages = array('bio','therapy','sessions','style','policies','blog','contact');
+                break;
+            case "Meditation_Classes":
+                $pages = array('about','benefits','instruction','research','blog','contact');
+                break;
+            default:
+                $pages = array();
+        }
+
+        foreach ($pages as $p) {
+            $link = str_replace(" ", "_", $p);
+            // highlight the category
+            if ($link == $currentPage) {
+                echo '<li class="currentPage">' . make_link($p, make_url($link.'/')). '</li>';
+            } else {
+                echo make_list_item(make_link($p, make_url($currentCat.'/'.$link)));
+            }
+        }
+        ?>
+    </ul>
 
     <div id="loginToggle" onmouseup="Ydom.get('login').style.display = (Ydom.get('login').style.display=='none')? 'block' : 'none';"><?php if (isset($_SESSION['logged_in'])):?>Funcs<?php else:?>Login<?php endif;?></div>
     <div id="login" style="display:none">

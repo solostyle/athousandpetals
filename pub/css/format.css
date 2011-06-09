@@ -55,14 +55,14 @@ ul.archlev3 li {padding:0 0 0 20px;display:block}
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 /*TODO: define .currentDivision and find a way to set the class */
-#topnav li:hover > a, #midnav li:hover > a, .currentDivision, .currentPage > a {
+#topnav li:hover > a, #midnav li:hover > a, .currentDivision > a, .currentPage > a {
     background-image: -moz-linear-gradient(center bottom, rgba(255, 255, 255, 0.8), rgba(200, 175, 200, 0.2));
     border-top: 1px solid #F8F8F8;
     box-shadow: 1px 1px 0px rgba(200, 200, 200, 0.5);
     text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.8) !important;
 }
-.currentPage > a {color:#444 !important;}
-#topnav li:hover > a, .currentDivision {background-image: -moz-linear-gradient(center top, rgba(255, 240, 255, .2), transparent 50%) !important}
+.currentPage > a, .currentDivision > a {color:#444 !important;}
+#topnav li:hover > a, .currentDivision > a {background-image: -moz-linear-gradient(center top, rgba(255, 240, 255, .2), transparent 50%) !important}
 
 #topnav.index {text-align:center;background:transparent;border:none;box-shadow:none;padding:3em 0}
 #topnav.index li {
