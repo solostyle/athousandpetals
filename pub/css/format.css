@@ -39,7 +39,7 @@ ul.archlev3 li {padding:0 0 0 20px;display:block}
 #left h3 {margin:0;}
 
 #topnav, #midnav {
-    padding:4px 0;
+    padding:0.3em 0;
     background-image: -moz-linear-gradient(top, transparent, rgba(200, 50, 200, 0.2));
     border: 1px solid #eee;
     border-radius: 0.4em;
@@ -51,7 +51,7 @@ ul.archlev3 li {padding:0 0 0 20px;display:block}
     border-radius: 0.6em;
     font-weight: bold;
     margin: 0;
-    padding: 8px 20px;
+    padding: 0.6em 1.5em;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 /*TODO: define .currentDivision and find a way to set the class */
