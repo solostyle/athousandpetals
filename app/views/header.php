@@ -99,7 +99,7 @@ if(isset($_POST['login_submit'])) {
             ?>
     </ul>
 
-    <ul id="midnav"><!-- each view page inserts html here --></ul>
+    <ul id="midnav" class="hidden"><!-- each view page inserts html here --></ul>
 
     <div id="loginToggle" onmouseup="Ydom.get('login').style.display = (Ydom.get('login').style.display=='none')? 'block' : 'none';"><?php if (isset($_SESSION['logged_in'])):?>Funcs<?php else:?>Login<?php endif;?></div>
     <div id="login" style="display:none">

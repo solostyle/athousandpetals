@@ -16,6 +16,7 @@ this.Atp.Admin = this.Atp.Admin || function() {
     var handleMidnavSuccess = function(o) {
         if(o.responseText !== undefined){
             midnavElem().innerHTML = o.responseText;
+            Ydom.removeClass(midnavElem(), 'hidden');
         }
     };
     

@@ -12,22 +12,11 @@ this.Listen = this.Listen || function (event, fn, elid) {
 // Now define local website namespace
 this.Atp = this.Atp || function() {
     var toggleTopNavClass = function () {
-       // var pageMatchArray = /.*athousandpetals.com\/.*\/(.*)/(document.URL);
         if (document.URL.match(/.*athousandpetals.com\/?$/gi)) {
-            Ydom.addClass('topnav', 'index');
-            Ydom.addClass('midnav', 'index');
-            Ydom.addClass('pagetitle', 'index');
-            Ydom.addClass('pagesubtitle', 'index');
+            Ydom.addClass(['topnav','pagetitle','pagesubtitle'], 'index');
         } else {
-            Ydom.removeClass('topnav', 'index');
-            Ydom.removeClass('midnav', 'index');
-            Ydom.removeClass('pagetitle', 'index');
-            Ydom.removeClass('pagesubtitle', 'index');
+            Ydom.removeClass(['topnav','pagetitle','pagesubtitle'], 'index');
         }
-        
-       /* if (pageMatchArray[0]) {
-            Ydom.addClass(pageMatchArray[1], 'currentPage');
-        }*/
     };    
     
     return {

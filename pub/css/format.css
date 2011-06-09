@@ -77,7 +77,7 @@ ul.archlev3 li {padding:0 0 0 20px;display:block}
 }
 #topnav.index li a {padding:3em 1em}
 
-#midnav.index {display:none}
+#midnav.hidden {display:none}
 
 /* form classes */
 #addForm {
