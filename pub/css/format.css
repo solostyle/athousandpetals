@@ -54,6 +54,7 @@ ul.archlev3 li {padding:0 0 0 20px;display:block}
     padding: 8px 20px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
+/*TODO: define .currentDivision and find a way to set the class */
 #topnav li:hover > a, #midnav li:hover > a, .currentDivision, .currentPage > a {
     background-image: -moz-linear-gradient(center bottom, rgba(255, 255, 255, 0.8), rgba(200, 175, 200, 0.2));
     border-top: 1px solid #F8F8F8;

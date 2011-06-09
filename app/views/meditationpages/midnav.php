@@ -1,7 +1,7 @@
     <!-- show mid-level navigation -->
     <?php 
-        $division = "Massage_Therapy";
-        $pages = array('about','benefits','therapies','reviews','policies','forms','blog','contact');
+        $division = "Meditation_Classes";
+        $pages = array('about','benefits','instruction','research','blog','contact');
         
         foreach ($pages as $p) {
             $link = str_replace(" ", "_", $p);
