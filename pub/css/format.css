@@ -4,7 +4,7 @@ modify at will
 */
 
 html {background-color:#fff;color:#888;font-family:sans-serif;
-    background-image: -moz-radial-gradient(top right, #eeeeff 10%, white);
+    background-image: -moz-radial-gradient(right top, #ddddff 10%, #ffeeff);
     height: 100%;
     font:0.8em/1.5em Arial,Helvetica,sans-serif
 }
@@ -24,15 +24,8 @@ option {border:0;padding:0 3px;}
     text-align:left;
 }
 #content .entry h3 {text-align:left;}
-#left h3 {margin:0;}
 
-#topnav a, #midnav a {
-    border-radius: 0.6em;
-    font-weight: bold;
-    margin: 0;
-    padding: 8px 20px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-}
+#left h3 {margin:0;}
 
 #topnav, #midnav {
     padding:4px 0;
@@ -41,24 +34,27 @@ option {border:0;padding:0 3px;}
     border-radius: 0.4em;
     box-shadow: 0 1px 3px rgba(100, 100, 100, 0.4);
 }
-
-#topnav li, #midnav li {
+#topnav {background:transparent !important;}
+#topnav li, #midnav li {background:transparent}
+#topnav a, #midnav a {
+    border-radius: 0.6em;
+    font-weight: bold;
     margin: 0;
-    padding: 0;
-    background:transparent
+    padding: 8px 20px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
-
 #topnav li:hover > a, #midnav li:hover > a, .currentDivision, .currentPage {
     background-image: -moz-linear-gradient(center bottom, rgba(255, 255, 255, 0.8), rgba(200, 175, 200, 0.2));
     border-top: 1px solid #F8F8F8;
     box-shadow: 1px 1px 0px rgba(200, 200, 200, 0.5);
     text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.8);
 }
+#topnav li:hover > a, .currentDivision {background-image: -moz-linear-gradient(center top, rgba(255, 240, 255, .2), transparent 50%) !important}
 
 #topnav.index {text-align:center;background:transparent;border:none;box-shadow:none;padding:3em 0}
 #topnav.index li {
     padding:3em 0;
-    background-image:-moz-radial-gradient(top, transparent 50%, rgba(200, 50, 200, 0.2));
+    background-image:-moz-radial-gradient(top, transparent 60%, rgba(200, 50, 200, 0.2));
     border: 1px solid #eee;
     border-radius: 0.4em;
     box-shadow: 0 1px 3px rgba(100, 100, 100, 0.4);
