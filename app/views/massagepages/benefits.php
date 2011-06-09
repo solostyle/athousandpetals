@@ -4,5 +4,5 @@
 </div><!-- end #right -->
 
 <script type="text/javascript">
-this.Atp.Admin.Load();
+this.Atp.Admin.LoadMidNav('benefits');
 </script>

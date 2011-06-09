@@ -14,6 +14,17 @@ ul li {display:inline;padding:0;}
 input, textarea, select, option {background:#eee;color:#aaa;border:1px solid #ccc;padding:0;font-size:16px;font-family:sans-serif}
 input:focus, textarea:focus, select:focus {border-color:#999}
 option {border:0;padding:0 3px;}
+.info {font-size:.8em}
+.entry p {line-height:1.3em}
+ul.tags li {display:block}
+a:link, a:visited {color:#58c;text-decoration:none;}
+a:hover, a:active {color:#444;}
+
+/* unordered list classes for archive navigation menu */
+ul.archlev1 {font-size:.8em}
+ul.archlev1 li {padding:0;display:block}
+ul.archlev2 li {padding:0 0 0 10px;display:block}
+ul.archlev3 li {padding:0 0 0 20px;display:block}
 
 #pagetitle.index, #pagesubtitle.index {text-align:center;}
 #pagetitle, #pagesubtitle {text-align:left;}
@@ -43,12 +54,13 @@ option {border:0;padding:0 3px;}
     padding: 8px 20px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
-#topnav li:hover > a, #midnav li:hover > a, .currentDivision, .currentPage {
+#topnav li:hover > a, #midnav li:hover > a, .currentDivision, .currentPage > a {
     background-image: -moz-linear-gradient(center bottom, rgba(255, 255, 255, 0.8), rgba(200, 175, 200, 0.2));
     border-top: 1px solid #F8F8F8;
     box-shadow: 1px 1px 0px rgba(200, 200, 200, 0.5);
-    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.8);
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.8) !important;
 }
+.currentPage > a {color:#444 !important;}
 #topnav li:hover > a, .currentDivision {background-image: -moz-linear-gradient(center top, rgba(255, 240, 255, .2), transparent 50%) !important}
 
 #topnav.index {text-align:center;background:transparent;border:none;box-shadow:none;padding:3em 0}
@@ -65,18 +77,6 @@ option {border:0;padding:0 3px;}
 #topnav.index li a {padding:3em 1em}
 
 #midnav.index {display:none}
-
-.info {font-size:.8em}
-.entry p {line-height:1.3em}
-ul.tags li {display:block}
-a:link, a:visited {color:#58c;text-decoration:none;}
-a:hover, a:active {color:#444;}
-
-/* unordered list classes for archive navigation menu */
-ul.archlev1 {font-size:.8em}
-ul.archlev1 li {padding:0;display:block}
-ul.archlev2 li {padding:0 0 0 10px;display:block}
-ul.archlev3 li {padding:0 0 0 20px;display:block}
 
 /* form classes */
 #addForm {
