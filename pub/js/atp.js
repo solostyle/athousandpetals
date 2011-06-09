@@ -15,9 +15,13 @@ this.Atp = this.Atp || function() {
         if (document.URL.match(/.*athousandpetals.com\/?$/gi)) {
             Ydom.addClass('topnav', 'index');
             Ydom.addClass('midnav', 'index');
+            Ydom.addClass('pagetitle', 'index');
+            Ydom.addClass('pagesubtitle', 'index');
         } else {
             Ydom.removeClass('topnav', 'index');
             Ydom.removeClass('midnav', 'index');
+            Ydom.removeClass('pagetitle', 'index');
+            Ydom.removeClass('pagesubtitle', 'index');
         }
     };
 

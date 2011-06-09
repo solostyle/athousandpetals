@@ -3,13 +3,19 @@
 modify at will
 */
 
-body {background-color:#eee;color:#888;font-family:sans-serif}
+html {background-color:#fff;color:#888;font-family:sans-serif;
+    background-image: -moz-radial-gradient(top right, #eeeeff 10%, white);
+    height: 100%
+}
 acronym:hover {cursor:help;}
 ul {padding:0;}
 ul li {display:inline;padding:0;}
 input, textarea, select, option {background:#eee;color:#aaa;border:1px solid #ccc;padding:0;font-size:16px;font-family:sans-serif}
 input:focus, textarea:focus, select:focus {border-color:#999}
 option {border:0;padding:0 3px;}
+
+#pagetitle.index, #pagesubtitle.index {text-align:center;}
+#pagetitle, #pagesubtitle {text-align:left;}
 
 #content .entry h2 {
     float:none;
@@ -19,27 +25,44 @@ option {border:0;padding:0 3px;}
 #content .entry h3 {text-align:left;}
 #left h3 {margin:0;}
 
-#topnav {padding:4px 0;background-color:#ddd}
-#topnav li {display:inline;padding:4px 1%;background-color:#ddd;border: 1px solid #eee}
-#topnav li:hover {background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(200, 0, 0, .9))}
+#topnav {padding:4px 0}
+#topnav li {
+    display:inline;
+    padding:4px 1%;
+    margin-right:2px;
+    background-image:-moz-linear-gradient(top, transparent 50%, rgba(200, 50, 200, 0.1));
+}
+#topnav li:hover {background-color:#eef}
 .currentDivision {font-weight:bold}
-#topnav.index {text-align:center;background:transparent}
-#topnav.index li {padding:3em 1em;border:0;background-color:#ff0000}
-#topnav.index li:hover {background-color:transparent}
-#topnav.index li a {padding:1em}
+#topnav.index {text-align:center}
+#topnav.index li {
+    padding:3em 0;
+    background-image:-moz-radial-gradient(top, transparent 50%, rgba(200, 50, 200, 0.1));
+}
+#topnav.index li:hover {background-color:#eef}
+#topnav.index li a {padding:3em 1em}
 #topnav.index li a:hover {}
 
-#midnav {padding:4px 0;background-color:#ddd}
-#midnav li {display:inline;padding:4px 2%;background-color:#ddd;border: 1px solid #eee}
-#midnav li:hover {background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(200, 0, 0, .9))}
-.currentPage {font-weight:bold;background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(200, 0, 0, .9))}
+#midnav {padding:4px 0}
+#midnav li {
+    display:inline;
+    padding:4px 2%;
+    margin-right:2px;
+    background-image: -moz-linear-gradient(top, transparent 50%, rgba(200, 50, 200, 0.1))
+}
+#midnav li:hover {background-color:#eef}
+}
+.currentPage {
+    font-weight:bold;
+    background-image: -moz-linear-gradient(bottom, rgba(200, 0, 0, .9), rgba(0, 200, 200, 0.3))
+}
 #midnav.index {display:none}
 
 .info {font-size:.8em}
 .entry p {line-height:1.3em}
 ul.tags li {display:block}
-a:link, a:visited {color:#c52;text-decoration:none;}
-a:hover, a:active {color:#fc0;}
+a:link, a:visited {color:#25c;text-decoration:none;}
+a:hover, a:active {color:#666;}
 
 /* unordered list classes for archive navigation menu */
 ul.archlev1 {font-size:.8em}
