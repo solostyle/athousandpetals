@@ -59,9 +59,10 @@ option {border:0;padding:0 3px;}
     border-radius: 0.4em;
     box-shadow: 0 1px 3px rgba(100, 100, 100, 0.4);
 }
-#topnav.index li:hover {}
+#topnav.index li:hover > a {
+    background-image:-moz-radial-gradient(top, transparent 60%, rgba(200, 50, 200, 0.2)), -moz-linear-gradient(center bottom, rgba(255, 255, 255, 0.8), rgba(200, 175, 200, 0.2)) !important;
+}
 #topnav.index li a {padding:3em 1em}
-#topnav.index li a:hover {}
 
 #midnav.index {display:none}
 
