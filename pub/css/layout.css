@@ -27,7 +27,6 @@ be careful when changing or recalculating these
 
 #topnav.index {
     margin: 4em auto;
-    width: 70.85%;      /* 700px / 988px = 0.7085 */
     position: relative;
 }
 
