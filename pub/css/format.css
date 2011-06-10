@@ -1,7 +1,4 @@
-/*
-        Format
-modify at will
-*/
+/*        Format         */
 
 html {
     background-color:#eee;
@@ -29,7 +26,7 @@ ul.archlev2 li {padding:0 0 0 10px;display:block}
 ul.archlev3 li {padding:0 0 0 20px;display:block}
 
 #pagetitle.index, #pagesubtitle.index {text-align:center;}
-#pagetitle, #pagesubtitle {text-align:left;}
+#pagetitle, #pagesubtitle {text-align:left;text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);}
 
 #content .entry h2 {
     float:none;
