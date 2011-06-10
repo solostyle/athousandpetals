@@ -11,7 +11,7 @@ be careful when changing or recalculating these
 }
 
 #pagetitle {
-    margin: 3em 0 0 0;
+    margin: 1.75em 0 0 0;
     padding: 5px;
 }
 
@@ -45,54 +45,12 @@ be careful when changing or recalculating these
 
 #content #left {
     float: left;
-    margin-top: 0.72727em;	/* 8px / 11px = 0.72727em */
+/*    margin-top: 0.72727em;	/* 8px / 11px = 0.72727em */
     width: 18.219%;		/* 180px / 988px = 0.18219 */
 }
-#left p {font-size:11px;}
-/* #left {font-size:11px;} */
-
-/* On the right, have a #blogEntries div that contains
- * .entry divs. But also have a #blogAddForm div that
- * contains the addForm, which appears only to me when
- * logged in. This div should be expand/collapsable
- * and just above #blogEntries
- */
 
 #content #right {
     float: right;
-    margin-top: 0.72727em;  /* 8px / 11px = 0.72727em */
+/*    margin-top: 0.72727em;  /* 8px / 11px = 0.72727em */
     width: 79.757%;   /* 788px / 988px = 0.79757 */
-}
-
-/*#content #right #blogAddForm, #content #right #blogEntries {
-    float: right;
-    width: 100%;
-}*/
-
-/*#content #right #blogEntries .entry {
-    float: right;
-    width: 100%;
-}*/
-
-#content #right #blogEntries .entry .main {
-    float: left;
-    width: 65.876%;	/* 556px / 844px = 0.65876 */
-}
-
-#content #right #blogEntries .entry .info {
-    float: right;
-    width: 31.753%; /* 268px / 844px = 0.31753 */
-}
-
-#content #right #blogAddForm .main {
-    float: left;
-    width: 65.876%; /* 556px / 844px = 0.65876 */
-}
-
-#content #right #blogAddForm .info {
-    float: right;
-    width: 31.753%; /* 268px / 844px = 0.31753 */
-}
-.entry {
-    clear: both;
 }
