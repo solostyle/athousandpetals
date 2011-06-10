@@ -3,7 +3,9 @@
 modify at will
 */
 
-html {background-color:#fff;color:#888;font-family:sans-serif;
+html {
+    background-color:#eee;
+    color:#888;
     background-image: -moz-radial-gradient(right top, #ddddff 10%, #ffeeff);
     height: 100%;
     font:0.8em/1.5em Arial,Helvetica,sans-serif
@@ -40,7 +42,7 @@ ul.archlev3 li {padding:0 0 0 20px;display:block}
 
 #topnav, #midnav {
     padding:0.3em 0;
-    background-image: -moz-linear-gradient(top, transparent, rgba(200, 50, 200, 0.2));
+    background-image: -moz-linear-gradient(center top, transparent, rgba(240, 150, 240, .1));
     border: 1px solid #eee;
     border-radius: 0.4em;
     box-shadow: 0 1px 3px rgba(100, 100, 100, 0.4);
@@ -54,15 +56,26 @@ ul.archlev3 li {padding:0 0 0 20px;display:block}
     padding: 0.6em 1.5em;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
-/*TODO: define .currentDivision and find a way to set the class */
+
 #topnav li:hover > a, #midnav li:hover > a, .currentDivision > a, .currentPage > a {
     background-image: -moz-linear-gradient(center bottom, rgba(255, 255, 255, 0.8), rgba(200, 175, 200, 0.2));
     border-top: 1px solid #F8F8F8;
     box-shadow: 1px 1px 0px rgba(200, 200, 200, 0.5);
     text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.8) !important;
 }
+#topnav li:hover > a {
+    background-image: -moz-linear-gradient(center bottom , rgba(255, 255, 255, 0.8), rgba(255, 240, 255, 0) 20%) /*redefining here*/
+}
+
 .currentPage > a, .currentDivision > a {color:#444 !important;}
-#topnav li:hover > a, .currentDivision > a {background-image: -moz-linear-gradient(center top, rgba(255, 240, 255, .2), transparent 50%) !important}
+
+.currentDivision > a, .currentDivision:hover > a {
+    background-image:
+    -moz-linear-gradient(center top, #5588FF 10%, transparent 20%), 
+    -moz-linear-gradient(center bottom, rgba(255, 255, 255, 0.8), rgba(255, 240, 255, 0.2) 20%) !important;
+    border-top: 1px solid #58f !important;
+}
+
 
 #topnav.index {text-align:center;background:transparent;border:none;box-shadow:none;padding:3em 0}
 #topnav.index li {
