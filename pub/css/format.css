@@ -37,8 +37,10 @@ ul.archlev3 li {padding:0 0 0 20px;display:block}
 #content .entry h3 {text-align:left;}
 
 #left h3 {margin:0;}
-#left li, #right li {display:block;}
-#right li {list-style-type:disc} /* TODO: add margins or whatever so you can see disc */
+#left li, #right li {display:list-item;}
+#left ol, #right oi  {list-style-type:decimal}
+#left ul, #right ul {list-style-type:circle}
+#left ol, #right oi , #left ul, #right ul {margin-left:20px}
 
 #topnav, #midnav {
     padding:0.3em 0;

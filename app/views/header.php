@@ -129,7 +129,7 @@ if(isset($_POST['login_submit'])) {
             $link = str_replace(" ", "_", $p);
             // highlight the category
             if ($link == $currentPage) {
-                echo '<li class="currentPage">' . make_link($p, make_url($link.'/')). '</li>';
+                echo '<li class="currentPage">' . make_link($p, make_url($currentCat.'/'.$link)). '</li>';
             } else {
                 echo make_list_item(make_link($p, make_url($currentCat.'/'.$link)));
             }
