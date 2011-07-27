@@ -54,7 +54,8 @@
     <p>You may prefer massages with a lighter or a heavier engagement. You are always welcome to voice this preference during the massage. Sometimes verbal communication is necessary and can create a better experience for you. Remember that massage always works in layers: to access the deeper layers, we need to work the ones superficial to them. The superficial layers guard the deeper ones, and they must be softened before the deeper ones can receive work. The speed at which layers soften depends on how well hydrated you are, your mental and emotional stress levels, the activity of your lifestyle, any injuries that may exist, and the skill of the massage therapist in coaxing your body into receiving the work. So if it takes a while, remember that it gets easier the more work you receive, and going at your pace is essential to creating lasting positive change.</p>
 
   </div><!-- end #right -->
+</div><!-- end #content -->
 
-  <script type="text/javascript">
+<script type="text/javascript">
 
-  </script>
+</script>
