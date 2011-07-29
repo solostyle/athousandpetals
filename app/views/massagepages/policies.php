@@ -14,7 +14,8 @@
   
   <div id="right">
     
-    <h1>Policies and Procedures</h1>
+    <h1>Our Policies</h1>
+	<p>These policies are guidelines for your information and safety. We adhere to them as much as possible, and additions and changes are made as the situations warrant. By consenting to care, you agree to abide by our policies.</p>
     <h2>Cancellation and Missed Appointments</h2>
 	<p>We honor a 24 hour cancellation policy that requests that you contact us 24 hours before your scheduled appointment if you want to cancel or reschedule. If you do not show up to the appointment, it is considered a cancellation without notice. You will be allowed one missed appointment without being billed. After one missed appointment, you will be billed, except in case of emergencies such as death in the family.</p>
     <h2>Tardiness</h2>
