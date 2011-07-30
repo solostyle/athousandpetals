@@ -44,8 +44,10 @@ be careful when changing or recalculating these
 }
 
 #content #left {
-    float: left;
+    /*float: left;
 /*    margin-top: 0.72727em;	/* 8px / 11px = 0.72727em */
+	position: absolute;
+	top: 12em;
     width: 18.219%;		/* 180px / 988px = 0.18219 */
 }
 

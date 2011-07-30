@@ -76,8 +76,22 @@ if(isset($_POST['login_submit'])) {
 <?php echo $html->includeJs('atp.massage');?>
 <?php echo $html->includeJs('atp.yoga');?>
 <?php echo $html->includeJs('atp.meditation');?>
+<?php echo $html->includeJs('jquery-1.6.2.min');?>
+<?php echo $html->includeJs('jquery.dimensions.min');?>
 <?php echo $html->includeCss('layout');?>
 <?php echo $html->includeCss('format');?>
+
+<script language="javascript">
+var name = "#left", menuYloc = null;
+$(document).ready(function(){
+	menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")));
+	$(window).scroll(function(){
+		var offset = menuYloc+$(document).scrollTop()+"px";
+        $(name).animate({top:offset},{duration:500,queue:false});
+	});
+});
+</script>
+
 </head>
 <body>
 <div id="page">
