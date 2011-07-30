@@ -120,7 +120,7 @@ $(document).ready(function(){
             }
         }
         mysql_close();
-            ?>
+        ?>
     </ul>
 
     <ul id="midnav" class="hidden">

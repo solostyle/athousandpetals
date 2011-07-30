@@ -4,6 +4,7 @@ $routing = array(
                 '/admin\/(.*?)\/(.*?)\/(.*)/' => 'admin/\1_\2/\3',
                 '/^([0-9]{4}\/.*)/' => 'ids/index/\1',
                 '/^tags\/(.*?)/' => 'tags/index/\1',
+                '/^Massage_Therapy\/therapies\/(.+)/' => 'massagetherapiespages/\1',
                 '/^Massage_Therapy[\/]?(.*)/' => 'massagepages/\1',
                 '/^Therapeutic_Yoga[\/]?(.*)/' => 'yogapages/\1',
                 '/^Meditation_Classes[\/]?(.*)/' => 'meditationpages/\1',

@@ -6,8 +6,12 @@ class MassagepagesController extends Controller {
     }
     function benefits() {
     }
-    function therapies() {
+    function therapies($queryArray) {
+		$this->set('leftList',array('Swedish Relaxation and Circulatory', 'Clinical Rehabilitative', 'Sports and Event', 'Myofascial Structural', 'Deep Tissue'));
+		$this->set('cat', 'Massage_Therapy');
+		$this->set('subCat', 'therapies');
     }
+
     function blog() {
     }
     function contact() {
@@ -17,9 +21,5 @@ class MassagepagesController extends Controller {
     function policies() {
     }
     function reviews() {
-    }
-    function midnav($queryArray) {
-        $this->doNotRenderHeader = true;
-        $this->set('currentPage', $queryArray[0]);
-    }
+    }	
 }

@@ -28,6 +28,7 @@ class Template {
 		
 		if ($doNotRenderHeader == false) {
 			if (file_exists(ROOT . DS . 'app' . DS . 'views' . DS . $this->_controller . DS . 'header.php')) {
+				include (ROOT . DS . 'app' . DS . 'views' . DS . 'header.php');
 				include (ROOT . DS . 'app' . DS . 'views' . DS . $this->_controller . DS . 'header.php');
 			} else {
 				include (ROOT . DS . 'app' . DS . 'views' . DS . 'header.php');
@@ -45,6 +46,7 @@ class Template {
 		if ($doNotRenderHeader == false) {
 			if (file_exists(ROOT . DS . 'app' . DS . 'views' . DS . $this->_controller . DS . 'footer.php')) {
 				include (ROOT . DS . 'app' . DS . 'views' . DS . $this->_controller . DS . 'footer.php');
+				include (ROOT . DS . 'app' . DS . 'views' . DS . 'footer.php');
 			} else {
 				include (ROOT . DS . 'app' . DS . 'views' . DS . 'footer.php');
 			}
