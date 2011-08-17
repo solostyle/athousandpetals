@@ -13,7 +13,7 @@ this.Atp.Shell = this.Atp.Shell || function() {
         //Atp.Archmenu.Load();
         
         // load admin web part
-        Atp.Admin.Load(); // doesn't load anything (header.php does it); just listens for clicks
+        Atp.Admin.Load(); // doesn't load anything (header.php does it)
     };
 
     return {

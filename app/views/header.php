@@ -74,6 +74,7 @@ if(isset($_POST['login_submit'])) {
 <?php echo $html->includeJs('atp.shell');?>
 <?php echo $html->includeJs('atp.admin');?>
 <?php echo $html->includeJs('atp.massage');?>
+<?php echo $html->includeJs('atp.massage.policies');?>
 <?php echo $html->includeJs('atp.yoga');?>
 <?php echo $html->includeJs('atp.meditation');?>
 <?php echo $html->includeJs('jquery-1.6.2.min');?>

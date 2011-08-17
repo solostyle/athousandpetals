@@ -6,7 +6,7 @@
 
 	 foreach ($lists as $l) {
 	 $link = str_replace(" ", "_", $l);
-	 echo make_list_item(make_link($l, make_url('Massage_Therapy/policies/'.$link)));
+	 echo make_list_item(make_link($l, make_url('Massage_Therapy/policies#'.$link)));
 	 }
 	 ?>
     </ul>
@@ -62,5 +62,5 @@
 </div<<!-- end #content -->
 
 <script type="text/javascript">
-
+this.Atp.Massage.Policies.Load();
 </script>

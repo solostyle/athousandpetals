@@ -33,17 +33,10 @@ this.Atp.Massage = this.Atp.Massage || function() {
     
     return {
 
-        Load: function(pageArray){
-            // initial load
-            if (pageArray) {
-                var pageStr='', i;
-                for(i=pageArray.length;i;i--){
-                    pageStr+=ds+pageArray[i];
-                }
-            } else {
-                pageStr = ds+'index';
-            }
-            catRequest(pageStr);
+        Load: function(){
+		
+			// set event handler for clicks in the web part
+			Listen("click", handleClick, 'left');
         }
     };
 
