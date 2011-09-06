@@ -36,35 +36,36 @@ this.Atp.Massage.Policies = this.Atp.Massage.Policies || function() {
 		location = (targetId)?targetId.split('#', 2)[0]:null;
 		hash = (targetId)?targetId.split('#', 2)[1]:null;
 		switch (hash) {
-		case "Cancellation_and_Missed_Appointments": 
-			window.scrollTo(0, 282);
-			break;
-		case "Tardiness":
-			window.scrollTo(0, 415);
-			break;
-		case "Conduct_and_Behavior":
-			window.scrollTo(0, 548);
-			break;
-		case "Referrals":
-			window.scrollTo(0, 1308);
-			break;
-		case "Background_Music_and_Environment":
-			window.scrollTo(0, 1409);
-			break;
-		case "Payment":
-			window.scrollTo(0, 1510);
-			break;
-		case "Health_History_and_Informed_Consent":
-			window.scrollTo(0, 1650);
-			break;
-		case "Privacy":
-			window.scrollTo(0, 1889);
-			break;
-		case "Liability_and_Disclaimer":
-			window.scrollTo(0, 2000);
-			break;
-		default:
-			break;
+			case "Cancellation_and_Missed_Appointments":
+				$(window).scrollTo(Ydom.get('cancellation'), {duration:500,queue:false});
+				break;
+			case "Tardiness":
+				$(window).scrollTo(Ydom.get('tardiness'), {duration:500,queue:false});
+				break;
+			case "Conduct_and_Behavior":
+				$(window).scrollTo(Ydom.get('conduct'), {duration:500,queue:false});
+				break;
+			case "Referrals":
+				$(window).scrollTo(Ydom.get('referrals'), {duration:500,queue:false});
+				break;
+			case "Background_Music_and_Environment":
+				$(window).scrollTo(Ydom.get('background'), {duration:500,queue:false});
+				break;
+			case "Payment":
+				$(window).scrollTo(Ydom.get('payment'), {duration:500,queue:false});
+				break;
+			case "Health_History_and_Informed_Consent":
+				$(window).scrollTo(Ydom.get('health'), {duration:500,queue:false});
+				break;
+			case "Privacy":
+				$(window).scrollTo(Ydom.get('privacy'), {duration:500,queue:false});
+				break;
+			case "Liability_and_Disclaimer":
+				$(window).scrollTo(Ydom.get('liability'), {duration:500,queue:false});
+				break;
+			default:
+				break;
+		};
 	};
     
     return {

@@ -79,6 +79,7 @@ if(isset($_POST['login_submit'])) {
 <?php echo $html->includeJs('atp.meditation');?>
 <?php echo $html->includeJs('jquery-1.6.2.min');?>
 <?php echo $html->includeJs('jquery.dimensions.min');?>
+<?php echo $html->includeJs('jquery.scrollTo.min');?>
 <?php echo $html->includeCss('layout');?>
 <?php echo $html->includeCss('format');?>
 
