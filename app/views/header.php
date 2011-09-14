@@ -143,7 +143,7 @@ $(document).ready(function(){
                 break;
 			// if there's no category, it is set to integrative_care awy above (and if it is integrative_care it will fall here)
             default:
-                $pages = array('what to expect','session format','benefits','blog','contact');
+                $pages = array('about','what to expect','session format','benefits','blog','contact');
         }
 
         foreach ($pages as $p) {

@@ -24,4 +24,4 @@ $routing = array(
  */
 //$default['controller'] = 'shells';
 $default['controller'] = 'integrativecarepages';
-$default['action'] = 'index';
+$default['action'] = 'about';

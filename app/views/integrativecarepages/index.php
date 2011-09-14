@@ -1,8 +1,8 @@
-    <div id="blogEntries">
+    <div id="contentWP">
 
-    </div><!-- end #blogEntries -->
+    </div><!-- end #contentWP -->
 </div><!-- end #right -->
 
 <script type="text/javascript">
-this.Atp.Shell.LoadWebParts();
+
 </script>

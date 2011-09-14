@@ -2,7 +2,7 @@
 
 class IntegrativecarepagesController extends Controller {
 
-    function index() {
+    function about() {
 	}
 	function what_to_expect() {
     }
