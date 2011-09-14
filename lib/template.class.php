@@ -34,7 +34,6 @@ class Template {
 				include (ROOT . DS . 'app' . DS . 'views' . DS . 'header.php');
 			}
 		}
-
 		if (file_exists(ROOT . DS . 'app' . DS . 'views' . DS . $this->_controller . DS . $this->_action . '.php')) {
 			include (ROOT . DS . 'app' . DS . 'views' . DS . $this->_controller . DS . $this->_action . '.php');
 		} else {

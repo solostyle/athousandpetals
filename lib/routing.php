@@ -22,5 +22,6 @@ $routing = array(
  * e.g. athousandpetals.com
  * then this is where they will be directed
  */
-$default['controller'] = 'shells';
+//$default['controller'] = 'shells';
+$default['controller'] = 'integrativecarepages';
 $default['action'] = 'index';
