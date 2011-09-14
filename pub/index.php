@@ -109,11 +109,11 @@ function DetermineRequest() {
     }
 
     $controllerName = ucfirst($controller) . 'Controller';
-
+//echo $controller . ' is the controller, ' . $action . ' is the action, ';
     $dispatch = new $controllerName($controller,$action);
-    //echo $controller . ' is the controller, ' . $action . ' is the action, ';
-    //print_r($queryString);
-    //echo ' is the query string';
+
+//print_r($queryString);
+//echo ' is the query string';
     if ((int)method_exists($controllerName, $action)) {
         call_user_func(array($dispatch,$action),$queryString);
     } else {

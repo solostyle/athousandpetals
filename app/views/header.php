@@ -63,7 +63,7 @@ if(isset($_POST['login_submit'])) {
 
 <html>
 <head>
-<title>a thousand petals | home</title>
+<title>A Thousand Petals Therapy :: Integrative Care with Massage, Yoga, and Meditation</title>
 <!-- Individual YUI JS files --> 
 <?php $html = new HTML();?>
 <?php echo $html->includeJs('yui28yahoo');?>
@@ -97,10 +97,10 @@ $(document).ready(function(){
 </head>
 <body>
 <div id="page">
-    <h1 id="pagetitle"><a href="/">Archana Sriram</a></h1>
+    <h1 id="pagetitle"><a href="/">A Thousand Petals Therapy</a></h1>
 
     <!-- some lame tagline -->
-    <p id="pagesubtitle"><em>Massage Therapist, Yoga and Meditation Teacher</em></p>
+    <p id="pagesubtitle"><em>Integrative Care with Massage Therapy, Therapeutic Yoga, and Meditation</em></p>
 
     <!-- show top-level navigation -->
     <ul id="topnav"><?php 
@@ -136,6 +136,9 @@ $(document).ready(function(){
                 break;
             case "Meditation_Classes":
                 $pages = array('about','benefits','instruction','research','blog','contact');
+                break;
+			case "Integrative_Care":
+                $pages = array('what to expect','session format','benefits','blog','contact');
                 break;
             default:
                 $pages = array();

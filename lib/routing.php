@@ -8,6 +8,7 @@ $routing = array(
                 '/^Massage_Therapy[\/]?(.*)/' => 'massagepages/\1',
                 '/^Therapeutic_Yoga[\/]?(.*)/' => 'yogapages/\1',
                 '/^Meditation_Classes[\/]?(.*)/' => 'meditationpages/\1',
+				'/^Integrative_Care[\/]?(.*)/' => 'integrativecarepages/\1',
                 '/^about/' => 'passives/about',
                 '/^publishfeeds/' => 'passives/publishfeeds',
                  );
