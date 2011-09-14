@@ -86,6 +86,7 @@ if(isset($_POST['login_submit'])) {
 <script language="javascript">
 var name = "#left", menuYloc = null;
 $(document).ready(function(){
+//only do this if #left exists
 	menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")));
 	$(window).scroll(function(){
 		var offset = ( $(document).scrollTop() > menuYloc )? 10+$(document).scrollTop()+"px" : menuYloc;
@@ -106,7 +107,10 @@ $(document).ready(function(){
     <ul id="topnav"><?php 
         // find the current category for highlighting later
         $uriArray = explode('/', $_SERVER['REQUEST_URI']);
-        $currentCat = (count($uriArray)>=2)?$uriArray[1]:'';
+        $currentCat = (count($uriArray)>=2)? $uriArray[1]:'';
+		if ($currentCat=='') {
+			$currentCat='Integrative_Care'; // this is the default
+		}
         $currentPage = (count($uriArray)>=3)?$uriArray[2]:'';
 
         select_db();
@@ -125,7 +129,7 @@ $(document).ready(function(){
         ?>
     </ul>
 
-    <ul id="midnav" class="hidden">
+    <ul id="midnav">
         <?php 
         switch ($currentCat) {
             case "Massage_Therapy":
@@ -137,11 +141,9 @@ $(document).ready(function(){
             case "Meditation_Classes":
                 $pages = array('about','benefits','instruction','research','blog','contact');
                 break;
-			case "Integrative_Care":
-                $pages = array('what to expect','session format','benefits','blog','contact');
-                break;
+			// if there's no category, it is set to integrative_care awy above (and if it is integrative_care it will fall here)
             default:
-                $pages = array();
+                $pages = array('what to expect','session format','benefits','blog','contact');
         }
 
         foreach ($pages as $p) {
