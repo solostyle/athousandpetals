@@ -98,7 +98,7 @@ function DetermineRequest() {
   $queryString = array();
 
   if (!isset($url)) {
-        // Go to the home page
+    // Go to the home page
     $controller = $default['controller'];
     $action = $default['action'];
   } else {
@@ -118,6 +118,11 @@ function DetermineRequest() {
         $queryString = $urlArray;
     } else {
         $action = 'index'; // Default Action
+		// How do I give a default action for each controller?
+		// Create a default.php in the /lib directory that has a 
+		// function that takes in a controller name and spits back a default controller?
+		// Isn't that basically like a switch statement? It's hard-coded. But I guess
+		// it would have to be hard-coded in somewhere.. If that's what I really want to do.
     }
   }
   

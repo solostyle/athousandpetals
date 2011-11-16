@@ -136,7 +136,7 @@ $(document).ready(function(){
                 $pages = array('about','benefits','therapies','reviews','policies','forms','blog','contact');
                 break;
             case "Therapeutic_Yoga":
-                $pages = array('bio','therapy','sessions','style','policies','blog','contact');
+                $pages = array('about','therapy','sessions','style','policies','blog','contact');
                 break;
             case "Meditation_Classes":
                 $pages = array('about','benefits','instruction','research','blog','contact');
