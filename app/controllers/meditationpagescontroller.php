@@ -9,10 +9,4 @@ class MeditationpagesController extends Controller {
     }
     function instruction() {
     }
-    function blog() {
-    }
-    function benefits() {
-    }
-    function contact() {
-    }
 }

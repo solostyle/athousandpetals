@@ -133,17 +133,17 @@ $(document).ready(function(){
         <?php 
         switch ($currentCat) {
             case "Massage_Therapy":
-                $pages = array('about','benefits','therapies','reviews','policies','forms','blog','contact');
+                $pages = array('benefits','therapies','reviews','policies','forms');
                 break;
             case "Therapeutic_Yoga":
-                $pages = array('about','therapy','sessions','style','policies','blog','contact');
+                $pages = array('therapy','sessions','style','policies');
                 break;
             case "Meditation_Classes":
-                $pages = array('about','benefits','instruction','research','blog','contact');
+                $pages = array('benefits','instruction','research');
                 break;
-			// if there's no category, it is set to integrative_care awy above (and if it is integrative_care it will fall here)
+			// if there's no category, it is set to integrative_care way above (and if it is integrative_care it will fall here)
             default:
-                $pages = array('about','what to expect','session format','benefits','blog','contact');
+                $pages = array('what to expect','session format','benefits');
         }
 
         foreach ($pages as $p) {
