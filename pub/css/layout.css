@@ -1,9 +1,16 @@
-/*
-	Layout
-be careful when changing or recalculating these
-http://www.alistapart.com/articles/fluidgrids
+/* 	Layout		*/
+
+/* If font size changes, need to recalculate ems below */
+html {font:1em/1.5em Arial,Helvetica,sans-serif;}
+
+/* Always have the scrollbar on the right*/
+body {overflow: scroll}
+
+
+/* Main layout 
+	be careful when changing or recalculating these
+	http://www.alistapart.com/articles/fluidgrids
 */
-html {font:1em/1.5em Arial,Helvetica,sans-serif}
 
 #page {
     margin: 2.5em auto;             /* 40px / 16px = 2.5em */
@@ -56,5 +63,5 @@ html {font:1em/1.5em Arial,Helvetica,sans-serif}
 #content #right {
     float: right;
 /*    margin-top: 0.72727em;  /* 8px / 11px = 0.72727em */
-    width: 74.117%;   /* 1008px / 1360px = 0.74117 */
+    width: 75.294%;   /* 1024px / 1360px = 0.75294 */
 }
